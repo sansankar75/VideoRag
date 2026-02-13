@@ -1,0 +1,24 @@
+{
+  "default": [
+    {
+      "id": "BUG",
+      "label": "Bug",
+      "color": "#FA646F"
+    },
+    {
+      "id": "WARN",
+      "label": "Warning",
+      "color": "#FFA500"
+    },
+    {
+      "id": "NOTE",
+      "label": "Note",
+      "color": "#ADD8E6"
+    },
+    {
+      "id": "IDEA",
+      "label": "Idea",
+      "color": "#00FF00"
+    }
+  ]
+}
