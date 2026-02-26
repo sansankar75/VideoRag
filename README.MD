@@ -284,6 +284,9 @@ Combine tool outputs → generate final answer.
 # 8. **Execution Flow (End-to-End)**
 
 ```
+
+
+
 1. User Query → LLM  
 2. LLM decides → search_frame_embeddings  
 3. Retrieve candidate frames  
@@ -292,3 +295,12 @@ Combine tool outputs → generate final answer.
 6. LLM fuses all evidence  
 7. Produce final natural-language answer
 ```
+
+
+
+
+
+# *Flow of file*
+
+
+main.py   ==> detection.json ==> json_processing.py ==>cleaned_detection.json =>data_cleaning.py ==> newData.json ==>final_cleaning.py ==> (again newData.json) ==> store_vector_db.py (index.faiss and index.pkl) ==>rag_agent.py (AI)
