@@ -518,7 +518,7 @@ Now give a natural, conversational answer based on these results. Be friendly an
 # ============ Main ============
 def main():
     print("\n" + "="*70)
-    print("🚀 Fast Video Analysis Agent (Human-like Responses)")
+    print(" HI , I am your 🚀 Fast Video Analysis Agent")
     print("="*70)
     
     # Check Ollama

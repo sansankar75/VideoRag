@@ -13,8 +13,8 @@ with open("newData.json","r") as j:
             else:
                 newData[e['label']]+=1
 
-for i in newData:
-    print(i,newData[i])
+"""for i in newData:
+    print(i,newData[i])"""
 
 
         

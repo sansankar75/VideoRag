@@ -101,13 +101,13 @@ for frame in cleaned_data:
         object_ids[label].add(obj_id)
         object_detections[label] += 1
 
-print("\n===== OBJECT COUNT SUMMARY =====\n")
-for label in object_ids:
+#print("\n===== OBJECT COUNT SUMMARY =====\n")
+"""for label in object_ids:
     print(f"Object: {label}")
     print(f"  Unique count     : {len(object_ids[label])}")
     print(f"  Total detections : {object_detections[label]}")
     print()
-
+"""
 # ---------------- Save cleaned JSON ----------------
 with open(JSON_OUTPUT, "w") as f:
     json.dump(cleaned_data, f, indent=4)

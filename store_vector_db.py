@@ -51,4 +51,4 @@ db = FAISS.from_texts(texts, embeddings, metadatas=metadatas)
 
 db.save_local(OUTPUT_DB)
 
-print(f"[OK] Stored {len(texts)} embeddings → {OUTPUT_DB}")
+#print(f"[OK] Stored {len(texts)} embeddings → {OUTPUT_DB}")

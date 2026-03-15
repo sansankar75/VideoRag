@@ -296,11 +296,6 @@ Combine tool outputs → generate final answer.
 7. Produce final natural-language answer
 ```
 
-
-
-
-
 # *Flow of file*
 
-
-main.py   ==> detection.json ==> json_processing.py ==>cleaned_detection.json =>data_cleaning.py ==> newData.json ==>final_cleaning.py ==> (again newData.json) ==> store_vector_db.py (index.faiss and index.pkl) ==>rag_agent.py (AI)
+main.py 📌  ==> detection.json ==> json_processing.py 📌 ==>cleaned_detection.json =>data_cleaning.py 📌==> newData.json ==>final_cleaning.py 📌 ==> (again newData.json) ==> store_vector_db.py📌 (index.faiss and index.pkl) ==>rag_agent.py (AI)📌

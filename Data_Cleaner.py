@@ -15,7 +15,7 @@ with open("cleaned_detection.json","r") as j:
                 NewId.append(e['id'])
 
     #print(NewId)   
-    print(len(NewId))   # len of id (count of all objects in video)
+    #print(len(NewId))   # len of id (count of all objects in video)
     
     ## Add elements into newData file based on id 
     for elements in t:
@@ -55,8 +55,9 @@ with open("newData.json","r") as j:
                 newDict[e['label']]+=1
             c+=1
 
-for i in newDict:
-    print(i,newDict[i])
+## show final result 
+"""for i in newDict:
+    print(i,newDict[i])"""
 
 
         

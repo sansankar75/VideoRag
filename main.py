@@ -1,7 +1,11 @@
+## Project dependencies 
+
 import cv2
 import json
 from ultralytics import YOLO
 from pathlib import Path
+import subprocess
+
 
 # ---------------- CONFIG ----------------
 VIDEO_PATH = "VideoData/sample_video.mp4"
@@ -115,3 +119,11 @@ with open(output_path,"w") as f:
     json.dump(all_frames_data, f, indent=4)
 
 print(f"✅ Detection + Tracking JSON saved at: {output_path}")
+
+
+subprocess.run(["python", "Json_Processing.py"])
+subprocess.run(["python", "Data_Cleaner.py"])
+subprocess.run(["python", "final_cleaning.py"])
+subprocess.run(["python", "store_vector_db.py"])
+subprocess.run(["python", "llm_tools.py"])
+subprocess.run(["python", "rag_agent.py"])
